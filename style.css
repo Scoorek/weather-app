@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(142, 255, 161, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    font-family: "Poppins";
+    color: white;
+}
+
+.location,
+.temeprature {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temeprature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+}
+
+.degree-section span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree-section h2 {
+    font-size: 40px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chart-place {
+    width: 99%;
+}
+
+.temperatures ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.temperatures ul li {
+    font-size: 1.2em;
+    padding: 30px;
+}
+
+.actual-temp {
+    display: flex;
+    width: 50vw;
+}
+
+.actual-temp-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    border: solid 1px aliceblue;
+    cursor: pointer;
+}
+
+.temp {
+    width: 300px;
+}

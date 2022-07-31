@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div class="temperature">
+        <div class="degree-section">
+            <!--<h2 class="temperature-degree"></h2>
+            <span>C</span>
+            <h1 class="pressure">Pressure</h1>
+            <span>hpa</span>
+            <h1 class="precipitation">Precipitation</h1>
+            <span>%</span>-->
+        </div>
+        <div class="actual-temp">
+            <h1 class="temp"></h1>
+            <div class="temperature actual-temp-child" onclick="makeTemperatureChart()">Temperature</div>
+            <div class="precipitation actual-temp-child" onclick="makePrecipitationChart()">Precipitation</div>
+            <div class="pressure actual-temp-child" onclick="makePressureChart()">Pressure</div>
+        </div><br>
+        <div class="main">
+            <div class="chart-place">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="temperatures">
+                <ul>
+                    <li>
+                        <p id="1am"></p> 1:00</li>
+                    <li>
+                        <p id="3am"></p>3:00</li>
+                    <li>
+                        <p id="5am"></p>5:00</li>
+                    <li>
+                        <p id="7am"></p>7:00</li>
+                    <li>
+                        <p id="9am"></p>9:00</li>
+                    <li>
+                        <p id="11am"></p>11:00</li>
+                    <li>
+                        <p id="1pm"></p>13:00</li>
+                    <li>
+                        <p id="3pm"></p>15:00</li>
+                    <li>
+                        <p id="5pm"></p>17:00</li>
+                    <li>
+                        <p id="7pm"></p>19:00</li>
+                    <li>
+                        <p id="9pm"></p>21:00</li>
+                    <li>
+                        <p id="11pm"></p>23:00</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
